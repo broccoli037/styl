@@ -1,0 +1,222 @@
+        header {
+            z-index: 99999;
+            background-color: white;
+            .upper-header {
+                background-color: black;
+                padding: 5px 0px;
+                .free-shiping {
+                    color: white;
+                    text-align: center;
+                }
+            }
+            .navbar {
+                width: 100%;
+                padding: 10px 0px;
+                display: flex;
+                .mobile {
+                    display: flex;
+                    justify-content: space-between;
+                    .navbar-brand {
+                        figure {
+                            max-width: 130px;
+                            margin-left: 20px;
+                        }
+                    }
+                    .bar {
+                        i {
+                            font-size: 30px;
+                            display: none;
+                        }
+                    }
+                }
+                // .navbar-toggler {
+                //     background-color: #fff;
+                //     border-radius: 3px;
+                //     border: 1px solid $t-color;
+                // }
+                .navbar-nav {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .nav-link {
+                        margin: 10px;
+                        padding: 0 15px;
+                        color: $black;
+                        text-transform: capitalize;
+                        letter-spacing: 0.03em;
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-align: center;
+                        margin: auto;
+                        &.search {
+                            display: inline-flex;
+                            padding: 3px;
+                            border-radius: 50px;
+                            transition: 0.4s;
+                            &:hover {
+                                background-color: rgb(122, 116, 116);
+                            }
+                            &:hover input {
+                                max-width: 120px;
+                            }
+                            & input {
+                                background: transparent;
+                                border: 0;
+                                max-width: 0;
+                                padding: 0;
+                                text-indent: 12px;
+                                color: #f9f9f9;
+                                font-size: 12px;
+                                outline: none;
+                                transition: 0.4s;
+                                &::placeholder {
+                                    color: rgba(255, 255, 255, 0.375);
+                                }
+                            }
+                            i {
+                                display: grid;
+                                place-items: center;
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(21, 21, 21);
+                                color: #f4f4f4;
+                                border-radius: inherit;
+                                font-size: 12px;
+                                pointer-events: none;
+                            }
+                        }
+                        &.login {
+                            width: 100px;
+                            font-size: 16px;
+                            color: $black;
+                            border-right: 1px solid black;
+                            border-bottom: 1px solid black;
+                            i {
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                    // .nav-item {
+                    //     &.mobile-display {
+                    //         display: none;
+                    //         ul {
+                    //             display: flex;
+                    //             flex-direction: column;
+                    //             align-items: center;
+                    //             justify-content: center;
+                    //             margin: 8px 0;
+                    //             li {
+                    //                 margin-bottom: 8px;
+                    //                 a {
+                    //                     color: #fff;
+                    //                     h6 {
+                    //                         font-size: 13px;
+                    //                         font-weight: 500;
+                    //                     }
+                    //                     i {
+                    //                         margin-right: 10px;
+                    //                     }
+                    //                 }
+                    //                 .social-icons {
+                    //                     display: flex;
+                    //                     flex-direction: row;
+                    //                     align-items: center;
+                    //                     justify-content: center;
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+            &.fixed-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 999;
+                .nav-top {
+                    display: none;
+                }
+                .navbar {
+                    .navbar-brand {
+                        display: inline;
+                        max-width: 160px;
+                        margin: 5px 0;
+                    }
+                    .collapse {
+                        .navbar-nav {
+                            justify-content: flex-end;
+                            .nav-item {
+                                padding: 5px 15px;
+                                .button {
+                                    padding: 8px 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+                hr {
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                    border-top: 1px solid black;
+                }
+            }
+            hr {
+                margin-bottom: 10px;
+                border-top: 1px solid black;
+            }
+        }
+        
+        @include custom_max(992px) {
+            header {
+                z-index: 99999;
+                .upper-header {
+                    background-color: black;
+                    padding: 5px 0px;
+                    .free-shiping {
+                        color: white;
+                        text-align: center;
+                    }
+                }
+                .navbar {
+                    width: 100%;
+                    padding: 10px 0px;
+                    display: flex;
+                    justify-content: space-between !important;
+                    flex-direction: column;
+                    .mobile {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .navbar-brand {
+                            figure {
+                                max-width: 130px;
+                                margin-left: 20px;
+                            }
+                        }
+                        .bar {
+                            i {
+                                width: 24px;
+                                display: contents;
+                            }
+                        }
+                    }
+                    .navbar-nav {
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        display: none;
+                        .nav-item {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                    .active {
+                        display: block;
+                    }
+                }
+            }
+        }

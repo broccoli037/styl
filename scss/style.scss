@@ -1,0 +1,24 @@
+@import "base/variables";
+@import "base/mixins";
+@import "modules/typography";
+@import "modules/buttons";
+@import "modules/scroll-top";
+@import "modules/common";
+@import "modules/components";
+@import "modules/slick";
+//Index Section Style
+@import "layouts/header";
+@import "layouts/banner";
+@import "layouts/trending-style";
+@import "layouts/fashion-shop";
+@import "layouts/footer";
+// Thanks Page Style
+//breadcrumb
+@import "layouts/breadcrumb";
+//inner-page
+@import "layouts/hoodie";
+@import "layouts/login";
+@import "layouts/signup";
+@import "layouts/product-discription-page";
+//admin
+@import "layouts/admin";

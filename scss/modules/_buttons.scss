@@ -1,0 +1,98 @@
+// Bootstrap Button Overwrite
+button {
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.btn {
+    border: none;
+}
+
+.btn,
+.form-control {
+    font-family: $font2;
+    font-size: 0.875rem;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid;
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: 0.4s all;
+
+    &:focus,
+    &:hover {
+        box-shadow: none;
+        outline: none;
+        color: inherit;
+    }
+
+    &.btn-custom-small {
+        font-size: 0.75rem;
+        padding: 6px 14px;
+    }
+
+    &.btn-custom-mid {
+        font-size: 0.875rem;
+        padding: 8px 20px;
+    }
+
+    &.btn-custom-large {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+
+
+
+    &.btn-primary {
+        background-color: $primaryColor;
+        color: $whitey;
+        border-color: $primaryColor;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $primaryColor;
+            color: $primaryColor;
+        }
+
+        &-ghost {
+            background-color: transparent;
+            border-color: $primaryColor;
+            color: $primaryColor;
+
+            &:hover {
+                background-color: $primaryColor;
+                color: $whitey;
+                border-color: $primaryColor;
+            }
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $secondaryColor;
+        color: $whitey;
+        border-color: $secondaryColor;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $secondaryColor;
+            color: $secondaryColor;
+        }
+
+        &-ghost {
+            background-color: transparent;
+            border-color: $secondaryColor;
+            color: $secondaryColor;
+
+            &:hover {
+                background-color: $secondaryColor;
+                color: $whitey;
+                border-color: $secondaryColor;
+            }
+        }
+    }
+}

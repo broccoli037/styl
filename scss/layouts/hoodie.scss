@@ -1,0 +1,79 @@
+.clothing-section {
+    .container {
+        .double {
+            display: flex;
+            gap: 50px;
+            .size-selection-container {
+                .size-selection {
+                    border: 2px solid black;
+                    width: 300px;
+                    box-sizing: border-box;
+                    margin-top: 110px;
+                    .heading {
+                        text-align: center;
+                        border-bottom: 2px solid black;
+                        padding: 5px;
+                        .choose {}
+                    }
+                    .sizes-container {
+                        padding: 20px 10px;
+                        .sizes {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .sizes-info {
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+            .clothing-container {
+                width: 100%;
+                .heading {
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin-top: 30px;
+                }
+                .product-container {
+                    margin-top: 30px;
+                }
+            }
+        }
+        .more-item {
+            margin: 100px 0px;
+            .choose {
+                width: 200px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@include custom_max(772px) {
+    .clothing-section {
+        .container {
+            .double {
+                flex-direction: column;
+                gap: 20px;
+                .size-selection-container {
+                    .size-selection {
+                        border: 2px solid black;
+                        width: 75%;
+                        margin-top: 10px;
+                        margin: auto;
+                    }
+                }
+                .clothing-container {
+                    width: 100%;
+                    .heading {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

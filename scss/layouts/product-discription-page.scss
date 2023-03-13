@@ -1,0 +1,186 @@
+.product-discription-page {
+    .container {
+        .previous-page {
+            .go-back {
+                a {
+                    font-size: 18px;
+                    font-size: 800;
+                }
+            }
+        }
+        .double-col {
+            margin-top: 30px;
+            display: flex;
+            gap: 100px;
+            .product-figure {
+                .images {
+                    width: 358px;
+                    .large-image {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .small-images {
+                        margin-top: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        img {
+                            width: 103px;
+                        }
+                    }
+                }
+            }
+            .product-info {
+                width: 100%;
+                .product-title {
+                    font-weight: 700;
+                    font-size: 40px;
+                }
+                .price {
+                    font-weight: 700;
+                    font-size: 32px;
+                }
+                .product-discription {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                .product-feature {
+                    margin: 30px 0px 20px 0px;
+                    .range {
+                        width: 300px;
+                        display: flex;
+                        justify-content: space-between;
+                        .color-heading {
+                            font-weight: 700;
+                            font-size: 24px;
+                        }
+                        .color-box {
+                            width: 40px;
+                            background-color: black;
+                        }
+                        .color-white {
+                            background-color: white;
+                            border: 2px solid black;
+                        }
+                        .color-brown {
+                            background-color: burlywood;
+                        }
+                        .box {
+                            border: 2px solid black;
+                            padding: 5px;
+                            font-size: 16px;
+                            width: 50px;
+                            text-align: center;
+                        }
+                    }
+                    .size-range {
+                        width: 400px;
+                    }
+                }
+                .cart {
+                    .two-row {
+                        width: 400px;
+                        display: flex;
+                        justify-content: space-between;
+                        .count {
+                            width: 150px;
+                            padding: 5px;
+                            border: 2px solid black;
+                            text-align: center;
+                        }
+                        .add {
+                            background-color: beige;
+                            border-right: 5px solid black;
+                            border-bottom: 5px solid black;
+                        }
+                    }
+                }
+            }
+        }
+        .clothing-container {
+            margin: 50px 0px;
+            .heading {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@include custom_max(992px) {
+    .product-discription-page {
+        .container {
+            .previous-page {
+                .go-back {
+                    a {
+                        font-size: 18px;
+                        font-size: 800;
+                    }
+                }
+            }
+            .double-col {
+                margin-top: 30px;
+                flex-direction: column;
+                gap: 50px;
+                .product-figure {
+                    .images {
+                        width: 300px;
+                        margin: auto;
+                        .small-images {
+                            margin-top: 20px;
+                            img {
+                                width: 90px;
+                            }
+                        }
+                    }
+                }
+                .product-info {
+                    width: 100%;
+                    .product-title {
+                        font-size: 28px;
+                    }
+                    .price {
+                        font-size: 22px;
+                    }
+                    .product-discription {
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                    .product-feature {
+                        margin: 30px 0px 20px 0px;
+                        .range {
+                            width: 250px;
+                            .color-heading {
+                                font-size: 18px;
+                            }
+                            .color-box {
+                                width: 40px;
+                            }
+                            .box {
+                                border: 2px solid black;
+                                padding: 5px;
+                                font-size: 12px;
+                                width: 30px;
+                            }
+                        }
+                        .size-range {
+                            width: 300px;
+                        }
+                    }
+                    .cart {
+                        .two-row {
+                            width: 280px;
+                            .count {
+                                width: 120px;
+                            }
+                        }
+                    }
+                }
+            }
+            .clothing-container {
+                margin: 30px 0px;
+            }
+        }
+    }
+}
